@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>日本語単語</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="hero">
+  <span class="badge">Kosakata Minna no Nihongo</span>
+  <h1>日本語<span>単語</span></h1>
+  <p>Flashcard Jepang interaktif</p>
+</section>
+<section class="bab">
+  <h2>📘 Pilih Bab</h2>
+  <div class="bab-grid" id="babGrid"></div>
+</section>
+<script>
+const grid=document.getElementById("babGrid");
+for(let i=1;i<=50;i++){
+ grid.innerHTML+=`<a href="study.html?bab=${i}" class="card">
+ <small>BAB</small><h3>${i}</h3><p>~20 kata</p></a>`;
+}
+</script>
+</body>
+</html>

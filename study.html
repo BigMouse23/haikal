@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Flashcard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress">
+  <span id="count">0 / 0</span>
+  <div class="bar"><div id="barFill"></div></div>
+</div>
+<div class="flashcard" onclick="flip()">
+  <small id="label">JEPANG</small>
+  <h1 id="text">...</h1>
+</div>
+<div class="controls">
+  <button onclick="prev()">⬅</button>
+  <button onclick="speak()">🔊</button>
+  <button onclick="shuffle()">🔀</button>
+  <button onclick="next()">➡</button>
+</div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
